@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive</title>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="../css/Home.css">
+
+</head>
+<body>
+  
+  <!-- slider css -->
+  <link rel="stylesheet" href="../css/slider.css">
+
+  <!-- font awesome cdn link -->
+  <script src="https://kit.fontawesome.com/8fdd7ba224.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- header section start -->
+  <section class="header_section_alert">
+
+    <!-- alert head -->
+    <div class="heading_alert">
+      <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">ShopNow</a></p>
+    </div>
+
+    <div class="language_section">
+      <p>English</p>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+  </section>
+  <!-- header section end -->
+
+  <!-- nav section start -->
+  <section class="nav__section">
+
+    <!-- heading -->
+    <div class="heading__section">
+      <h2 class="heading">Exclusive</h2>
+    </div>
+
+    <!-- page links -->
+    <div class="page_links">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+
+    <!-- search and heart store -->
+    <div class="search_heart_store">
+
+      <!-- search -->
+      <div class="search">
+        <input type="text" placeholder="What are you looking for?">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <!-- heart -->
+      <div class="heart">
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+      </div>
+
+      <!-- store -->
+      <div class="store">
+        <a href="#"><img src="../assets/Cart1.png" alt="cart"></a>
+      </div>
+    </div>
+
+  </section>
+  <!-- nav section end -->
+
+
+  <!-- banner section start -->
+  <section class="banner_section">
+
+    <!-- box 1 -->
+    <div class="left_side">
+      <ul>
+        <li><a href="#" class="right">Women`s Fashion <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#" class="right">Men`s Fashion <i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Home & Lifestyle</a></;>
+        <li><a href="#">Medicine</a></li>
+        <li><a href="#">Sports & Outdoor</a></li>
+        <li><a href="#">Baby`s & Toys</a></li>
+        <li><a href="#">Groceries & Pets</a></li>
+        <li><a href="#">Health & Beauty</a></li>
+      </ul>
+    </div>
+
+    <!-- box 2 -->
+    <div class="right_side">
+      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+        centered-slides="true" autoplay-delay="1000" autoplay-disable-on-interaction="false">
+
+        <swiper-slide>
+          <img src="../assets/homebanner.png" alt="">
+        </swiper-slide>
+
+        <swiper-slide>
+          <img src="../assets/homebanner.png" alt="">
+        </swiper-slide>
+
+        <swiper-slide>
+          <img src="../assets/homebanner.png" alt="">
+        </swiper-slide>
+
+        <swiper-slide>
+          <img src="../assets/homebanner.png" alt="">
+        </swiper-slide>
+
+        <swiper-slide>
+          <img src="../assets/homebanner.png" alt="">
+        </swiper-slide>
+
+      </swiper-container>
+    </div>
+
+  </section>
+  <!-- banner section end -->
+
+  <!-- today section start -->
+
+  <section class="today_section">
+
+    <!-- heading -->
+    <div class="head">
+
+      <span class="empty"></span>
+      <span class="text">Today’s</span>
+
+    </div>
+
+    <!-- head name and time and product slider -->
+    <div class="intro_sec">
+
+      <!-- left side -->
+      <div class="left_side">
+
+        <!-- text -->
+        <div class="text">
+          <h2>Flash Sales</h2>
+        </div>
+
+        <!-- time -->
+        <div class="time">
+
+          <!-- days -->
+          <div class="box">
+            <span class="text">Days</span>
+            <span id="day">03</span>
+          </div>
+
+          <small>:</small>
+
+          <!-- Hours -->
+          <div class="box">
+            <span class="text">Hours</span>
+            <span id="hour">03</span>
+          </div>
+
+          <small>:</small>
+
+          <!-- minutes -->
+          <div class="box">
+            <span class="text">Minutes</span>
+            <span id="minute">03</span>
+          </div>
+
+          <small>:</small>
+
+          <!-- seconds -->
+          <div class="box">
+            <span class="text">Seconds</span>
+            <span id="second">03</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div class="right_side">
+        <a href="#"><img src="../assets/left.png" alt="left arrow"></a>
+        <a href="#"><img src="../assets/right.png" alt="right arrow"></a>
+      </div>
+
+    </div>
+
+    <!-- product items -->
+    <div class="product_items">
+
+      <!-- product one -->
+      <div class="product">
+
+        <!-- image -->
+        <div class="image_item" onmouseover="productOne()" onmouseout="productOneRemove()">
+
+          <img class="game" src="../assets/game.png" alt="game">
+          <span class="off">-40%</span>
+          <span class="add_to_cart" id="one">Add To Cart</span>
+
+          <!-- absulute icons -->
+          <div class="follow_icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+        </div>
+
+        <!-- data -->
+        <div class="data">
+
+          <h4>HAVIT HV-G92 Gamepad</h4>
+          <p>$120 <span>$160</span></p>
+          <div class="stars">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <span>(1000)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- product two -->
+      <div class="product">
+
+        <!-- image -->
+        <div class="image_item" onmouseover="productTwo()" onmouseout="productTwoRemove()">
+
+          <img class="game" src="../assets/keyboard.png" alt="game">
+          <span class="off">-36%</span>
+          <span class="add_to_cart" id="two">Add To Cart</span>
+
+          <!-- absulute icons -->
+          <div class="follow_icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+        </div>
+
+        <!-- data -->
+        <div class="data">
+
+          <h4>AK-900 Wired Keyboard</h4>
+          <p>$960 <span>$1160</span></p>
+          <div class="stars">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <span>(879)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- product three -->
+      <div class="product">
+
+        <!-- image -->
+        <div class="image_item" onmouseover="productThree()" onmouseout="productThreeRemove()">
+
+          <img class="game" src="../assets/monitor.png" alt="game">
+          <span class="off">-30%</span>
+          <span class="add_to_cart" id="three">Add To Cart</span>
+
+          <!-- absulute icons -->
+          <div class="follow_icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+        </div>
+
+        <!-- data -->
+        <div class="data">
+
+          <h4>IPS LCD Gaming Monitor</h4>
+          <p>$370 <span>$400</span></p>
+          <div class="stars">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <span>(126)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- product four -->
+      <div class="product">
+
+        <!-- image -->
+        <div class="image_item" onmouseover="productFour()" onmouseout="productFourRemove()">
+
+          <img class="game" src="../assets/cart2.png" alt="game">
+          <span class="off">-50%</span>
+          <span class="add_to_cart" id="four">Add To Cart</span>
+
+          <!-- absulute icons -->
+          <div class="follow_icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+        </div>
+
+        <!-- data -->
+        <div class="data">
+
+          <h4>The north coat</h4>
+          <p>$660 <span>$700</span></p>
+          <div class="stars">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <span>(634)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- product five -->
+      <div class="product">
+
+        <!-- image -->
+        <div class="image_item" onmouseover="productFive()" onmouseout="productFiveRemove()">
+
+          <img class="game" src="../assets/cart12.png" alt="game">
+          <span class="off">-70%</span>
+          <span class="add_to_cart" id="five">Add To Cart</span>
+
+          <!-- absulute icons -->
+          <div class="follow_icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+
+        </div>
+
+        <!-- data -->
+        <div class="data">
+
+          <h4>Gucci duffle bag</h4>
+          <p>$960 <span>$1160</span></p>
+          <div class="stars">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <img src="../assets/colorStart.png" alt="">
+            <span>(980)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="view_products">
+      <a href="#">View All Products</a>
+    </div>
+  </section>
+  <hr>
+  <!-- today section end -->
+
+  <!-- cotegorie section start -->
+  <section class="cotegorie_section">
+
+    <!-- head -->
+    <div class="head">
+
+      <span class="empty"></span>
+      <span class="text">Categories</span>
+
+    </div>
+
+    <!-- Browse By Category -->
+    <div class="intro_sec">
+
+      <!-- left side -->
+      <div class="left_side">
+
+        <!-- text -->
+        <div class="text">
+          <h2>Browse By Category</h2>
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div class="right_side">
+        <a href="#"><img src="../assets/left.png" alt="left arrow"></a>
+        <a href="#"><img src="../assets/right.png" alt="right arrow"></a>
+      </div>
+    </div>
+
+    <!-- product cotegories -->
+    <div class="product_type">
+      <!-- first product -->
+      <div class="box">
+        <a href="" id="first_cotegories" onmouseenter="changeBgOne()" onmouseleave="changeBgOneRemove()">
+          <img src="../assets/phoneUi.png" id="firstImage" alt="">
+          <p id="phone">Phones</p>
+        </a>
+      </div>
+
+      <!-- two product -->
+      <div class="box">
+        <a href="" id="second_cotegories" onmouseenter="changeBgTwo()" onmouseleave="changeBgTwoRemove()">
+          <img src="../assets/Category-Computer.png" id="secondImage"  alt="">
+          <p id="computer">Computers</p>
+        </a>
+      </div>
+
+      <!-- three product -->
+      <div class="box">
+        <a href="" id="three_cotegories" onmouseenter="changeBgThree()" onmouseleave="changeBgThreeRemove()">
+          <img id="threeImage"  src="../assets/Category-SmartWatch.png" alt="">
+          <p id="watch">SmartWatch</p>
+        </a>
+      </div>
+
+      <!-- four product -->
+      <div class="box">
+        <a href="" id="four_cotegories" onmouseenter="changeBgFour()" onmouseleave="changeBgFourRemove()">
+          <img id="fourImage"  src="../assets/Category-Camera.png" alt="">
+          <p id="camara">Camera</p>
+        </a>
+      </div>
+
+      <!-- five product -->
+      <div class="box">
+        <a href="" id="five_cotegories" onmouseenter="changeBgFive()" onmouseleave="changeBgFiveRemove()">
+          <img id="fiveImage"  src="../assets/Category-Headphone.png" alt="">
+          <p id="headphone">HeadPhones</p>
+        </a>
+      </div>
+
+      <!-- six product -->
+      <div class="box">
+        <a href="" id="six_cotegories" onmouseenter="changeBgSix()" onmouseleave="changeBgSixRemove()">
+          <img id="sixImage"  src="../assets/Category-Gamepad.png" alt="">
+          <p id="gaming">Gaming</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- cotegorie section end -->
+
+
+  <!-- home script link -->
+  <script src="../js/Home.js"></script>
+</body>
+
+  <!-- swiper js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+  <!-- date file -->
+  <script src="../js/date.js"></script>
+</body>
+
+</html>

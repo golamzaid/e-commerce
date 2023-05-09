@@ -1,0 +1,647 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.6%;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ========= heading section start =========== */
+.header_section_alert {
+  width: 100%;
+  display: flex;
+  height: 30px;
+  padding-left: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+}
+
+/* head */
+.header_section_alert .heading_alert p {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.header_section_alert .heading_alert p a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* language */
+.header_section_alert .language_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.header_section_alert .language_section p {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.header_section_alert .language_section i {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  margin-top: -1px;
+}
+
+/* ========= heading section end =========== */
+
+/* ====== nav section start ========== */
+.nav__section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.523);
+}
+
+/* heading section */
+.nav__section .heading__section {
+  width: 100px;
+}
+
+.nav__section .heading__section h2 {
+  opacity: 80%;
+}
+
+/* links section */
+.nav__section .page_links {
+  width: 250px;
+}
+
+.nav__section .page_links ul {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.nav__section .page_links ul li a {
+  letter-spacing: 0.3px;
+  position: relative;
+  opacity: 80%;
+  padding: 1px;
+  transition: 0.5s all;
+}
+
+.nav__section .page_links ul li a:hover {
+  opacity: 100%;
+}
+
+.nav__section .page_links ul li a:hover::before {
+  width: 100%;
+}
+
+.nav__section .page_links ul li a::before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  transition: 0.5s all;
+}
+
+.nav__section .page_links ul li .active::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s all;
+}
+
+.nav__section .page_links ul li .active {
+  opacity: 100%;
+}
+
+/* search section */
+.nav__section .search_heart_store {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.nav__section .search_heart_store .search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav__section .search_heart_store .search input {
+  padding: 4px 10px;
+  width: 200px;
+  outline: none;
+  color: rgba(60, 61, 62, 0.765);
+  border: none;
+  background-color: rgba(198, 198, 198, 0.252);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.nav__section .search_heart_store .search i {
+  position: relative;
+  right: 20px;
+  font-size: 1.3rem;
+  opacity: 60%;
+}
+
+.nav__section .search_heart_store .search ::placeholder {
+  font-size: 1rem;
+}
+
+/* heart section */
+.nav__section .search_heart_store .heart {
+  display: flex;
+  align-items: center;
+}
+
+.nav__section .search_heart_store .heart a i {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+
+/* store section */
+.nav__section .search_heart_store .store {
+  display: flex;
+  align-items: center;
+}
+
+.nav__section .search_heart_store .store a img {
+  display: flex;
+  align-items: center;
+  width: 20px;
+}
+
+/* ====== nav section end ========== */
+
+/* ======== banner section start ========== */
+.banner_section {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+/* left side */
+.banner_section .left_side {
+  width: 300px;
+  border-right: 1px solid rgb(137, 137, 137);
+  padding-left: 90px;
+  margin-right: 20px;
+}
+
+.banner_section .left_side ul {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.banner_section .left_side ul li a {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  opacity: 80%;
+  transition: 0.5s all;
+  padding-right: 20px;
+}
+
+.banner_section .left_side ul li a:hover {
+  opacity: 100%;
+}
+
+/* right side */
+.banner_section .right_side {
+  padding-top: 20px;
+  width: 100%;
+}
+
+/* ======== banner section end ========== */
+
+/* ======== today section start ========= */
+
+.today_section {
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 90px;
+}
+
+/* head */
+.today_section .head {
+  display: flex;
+  gap: 14px;
+  padding: 5px 0px;
+}
+
+/* empty text */
+.today_section .head .empty {
+  position: relative;
+}
+
+.today_section .head .empty::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-color: #db4444;
+  position: absolute;
+  border-radius: 2px;
+  top: -2px;
+  left: 0;
+}
+
+/* text */
+.today_section .head .text {
+  color: #db4444;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* intro sec */
+.today_section .intro_sec {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* left side */
+.today_section .intro_sec .left_side {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* flash sales text */
+.today_section .intro_sec .left_side .text h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  opacity: 80%;
+}
+
+/* all times text */
+.today_section .intro_sec .left_side .time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.today_section .intro_sec .left_side .time small {
+  font-size: 2rem;
+  color: #db4444;
+}
+.today_section .intro_sec .left_side .time .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.today_section .intro_sec .left_side .time .box span {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.today_section .intro_sec .left_side .time .box .text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* right side */
+.today_section .intro_sec .right_side {
+  display: flex;
+  gap: 16px;
+}
+
+.today_section .intro_sec .right_side img {
+  width: 24px;
+  padding: 4px 4px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  opacity: 80%;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.today_section .intro_sec .right_side img:hover {
+  opacity: 100%;
+}
+
+/* product items */
+.today_section .product_items {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-top: 10px;
+}
+
+.today_section .product_items .product {
+  padding: 10px;
+  width: max-content;
+  border-radius: 2px;
+  transition: .5s all;
+}
+
+.today_section .product_items .product:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+/* image items */
+.today_section .product_items .product .image_item {
+  background-color: #f5f5f5ec;
+  width: 150px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: .5s all;
+}
+
+.today_section .product_items .product .image_item .game {
+  height: max-content;
+  width: 100px;
+}
+
+.today_section .product_items .product .image_item .off {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 3px;
+  border-radius: 3px;
+  background-color: #db4444;
+  color: white;
+}
+
+.today_section .product_items .product .image_item .add_to_cart {
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s all;
+  bottom: -30px;
+}
+
+.today_section .product_items .product .image_item  .act{
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s all;
+  bottom: 0px;
+}
+
+
+.today_section .product_items .product .image_item .follow_icons {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.today_section .product_items .product .image_item .follow_icons i {
+  cursor: pointer;
+  background-color: #e4e3e3;
+  padding: 4px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* data section */
+.today_section .product_items .product .data {
+  padding: 5px 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.today_section .product_items .product .data h4 {
+  font-weight: 500;
+}
+
+.today_section .product_items .product .data p span {
+  text-decoration: line-through;
+  opacity: 70%;
+  color: rgb(60, 60, 60);
+}
+
+.today_section .product_items .product .data p {
+  display: flex;
+  gap: 15px;
+  color: #db4444;
+}
+
+.today_section .product_items .product .data .stars {
+  display: flex;
+  align-items: center;
+  gap:0px;
+}
+
+.today_section .product_items .product .data .stars img{
+  width: 13px;
+}
+
+.today_section .product_items .product .data .stars span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  margin-left: 10px;
+}
+
+/* show all items */
+.today_section .view_products {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.today_section .view_products a {
+  background-color: #db4444;
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  color: white;
+  transition: .5s all;
+}
+
+.today_section .view_products a:hover {
+  background-color: #e4e3e3;
+  color: black;
+}
+
+hr {
+  margin: 30px 100px;
+}
+
+/* ======== today section end ========== */
+
+/* ========= cotegories section start ============ */
+.cotegorie_section {
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 90px;
+}
+
+/* head */
+.cotegorie_section .head {
+  display: flex;
+  gap: 14px;
+  padding: 5px 0px;
+}
+
+/* empty text */
+.cotegorie_section .head .empty {
+  position: relative;
+}
+
+.cotegorie_section .head .empty::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-color: #db4444;
+  position: absolute;
+  border-radius: 2px;
+  top: -2px;
+  left: 0;
+}
+
+/* text */
+.cotegorie_section .head .text {
+  color: #db4444;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+/* intro sec */
+.cotegorie_section .intro_sec {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* left side */
+.cotegorie_section .intro_sec .left_side {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Browse By Category text */
+.cotegorie_section .intro_sec .left_side .text h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2;
+  opacity: 80%;
+}
+
+/* right side */
+.cotegorie_section .intro_sec .right_side {
+  display: flex;
+  gap: 16px;
+}
+
+.cotegorie_section .intro_sec .right_side img {
+  width: 24px;
+  padding: 4px 4px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  opacity: 80%;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+.cotegorie_section .intro_sec .right_side img:hover {
+  opacity: 100%;
+}
+
+/* product type */
+.cotegorie_section .product_type {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.cotegorie_section .product_type a {
+  width: 110px;
+  border: 1px solid rgb(160, 160, 160);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+  border-radius: 5px;
+}
+
+/* ========= cotegories section end ============ */
